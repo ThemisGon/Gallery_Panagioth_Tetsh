@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall1"
+    android:fitsSystemWindows="true"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/sound5"
+        android:layout_width="38dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="680dp"
+        android:onClick="TextSpeak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/Pan_tets"
+        android:layout_width="327dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="164dp"
+        android:onClick="pl_tetsh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/f_panagtetshs"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elegantTextHeight="true"
+        android:fontFamily="@font/agbalumo"
+        android:text="@string/WelcomeText"
+        android:textColor="#F3EFEF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Pan_tets"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.868"
+        tools:ignore="TextViewEdits" />
+
+    <EditText
+        android:id="@+id/Testh_keim"
+        android:layout_width="367dp"
+        android:layout_height="234dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/keimeno_shape"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:onClick="phot_emf"
+        android:textColor="#F3EFEF"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,LabelFor,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/WelcomeText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/agbalumo"
+        android:text="@string/WelcomeText1"
+        android:textColor="#F3EFEF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pan_tets" />
+
+    <Button
+        android:id="@+id/Metafora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:background="@drawable/but_shape"
+        android:fontFamily="@font/agbalumo"
+        android:onClick="next_pg"
+        android:text="@string/Metafora"
+        android:textAllCaps="false"
+        android:textColor="#F3EFEF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Eik_Page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/but_shape"
+        android:fontFamily="@font/agbalumo"
+        android:onClick="Imagepage"
+        android:text="@string/eik_pg"
+        android:textAllCaps="false"
+        android:textColor="#F3EFEF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Metafora" />
+
+    <Button
+        android:id="@+id/ac_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="496dp"
+        android:background="@drawable/but_shape"
+        android:fontFamily="@font/agbalumo"
+        android:onClick="AccountNO"
+        android:text="@string/log_no"
+        android:textAllCaps="false"
+        android:textColor="#F3EFEF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.337"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/ac_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="496dp"
+        android:background="@drawable/but_shape"
+        android:elegantTextHeight="true"
+        android:fontFamily="@font/agbalumo"
+        android:onClick="AccountYES"
+        android:text="@string/log_yes"
+        android:textAllCaps="false"
+        android:textColor="#F3EFEF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/ac_text"
+        android:layout_width="349dp"
+        android:layout_height="27dp"
+        android:elegantTextHeight="true"
+        android:fontFamily="@font/agbalumo"
+        android:text="@string/textlog"
+        android:textAlignment="center"
+        android:textColor="#F3EFEF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ac_yes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WelcomeText1"
+        app:layout_constraintVertical_bias="0.742"
+        tools:ignore="TextViewEdits,TextSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
